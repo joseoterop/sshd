@@ -5,7 +5,8 @@
 
 **LDAP** docker run --rm --name ldap -h ldap --net ldapnet -d edtasixm06/ldapserver:18group
 
-**sshd** docker run --rm --name ldap -h ldap --net ldapnet -d edtasixm06/ldapserver:18group
+**sshd** docker run --rm --name sshd -h sshd --net ldapnet --privileged -it joterop/sshd
+
 
 En primer lugar instalamos mediante la configuración habitual los paquetes necesarios para garantizar
 una conexion con el servidor **LDAP** asi'como el servidor ssh.
